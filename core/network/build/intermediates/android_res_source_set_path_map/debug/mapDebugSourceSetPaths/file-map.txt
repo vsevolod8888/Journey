@@ -1,0 +1,10 @@
+com.sever.journey.internetconnection.network-pngs-0 /Users/vsevolod/Documents/WORK/Journey/core/network/build/generated/res/pngs/debug
+com.sever.journey.internetconnection.network-resValues-1 /Users/vsevolod/Documents/WORK/Journey/core/network/build/generated/res/resValues/debug
+com.sever.journey.internetconnection.network-updated_navigation_xml-2 /Users/vsevolod/Documents/WORK/Journey/core/network/build/generated/updated_navigation_xml/debug
+com.sever.journey.internetconnection.network-mergeDebugResources-3 /Users/vsevolod/Documents/WORK/Journey/core/network/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
+com.sever.journey.internetconnection.network-mergeDebugResources-4 /Users/vsevolod/Documents/WORK/Journey/core/network/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+com.sever.journey.internetconnection.network-debug-5 /Users/vsevolod/Documents/WORK/Journey/core/network/build/intermediates/merged_res/debug/mergeDebugResources
+com.sever.journey.internetconnection.network-debug-6 /Users/vsevolod/Documents/WORK/Journey/core/network/build/intermediates/packaged_res/debug/packageDebugResources
+com.sever.journey.internetconnection.network-debug-7 /Users/vsevolod/Documents/WORK/Journey/core/network/src/debug/res
+com.sever.journey.internetconnection.network-main-8 /Users/vsevolod/Documents/WORK/Journey/core/network/src/main/res
+gradleHome-0 /Users/vsevolod/.gradle

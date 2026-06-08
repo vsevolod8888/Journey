@@ -1,0 +1,2 @@
+-keep,allowobfuscation,allowshrinking class com.sever.journey.presentation.SettingsViewModel
+-keep,allowobfuscation,allowshrinking class com.sever.journey.presentation.SettingsViewModel

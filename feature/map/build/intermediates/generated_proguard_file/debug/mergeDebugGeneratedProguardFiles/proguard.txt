@@ -1,0 +1,4 @@
+-keep,allowobfuscation,allowshrinking class com.sever.journey.presentation.MapAllRoutesViewModel
+-keep,allowobfuscation,allowshrinking class com.sever.journey.presentation.MapAllRoutesViewModel
+-keep,allowobfuscation,allowshrinking class com.sever.journey.presentation.MapViewModel
+-keep,allowobfuscation,allowshrinking class com.sever.journey.presentation.MapViewModel

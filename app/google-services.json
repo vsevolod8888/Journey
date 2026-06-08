@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "300203454585",
+    "project_id": "journey-7e5d4",
+    "storage_bucket": "journey-7e5d4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300203454585:android:22395c242a075b444a64a8",
+        "android_client_info": {
+          "package_name": "com.sever.journey"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADNY6cvNnZnbvN2YYsqnU-iin8qRITyW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
