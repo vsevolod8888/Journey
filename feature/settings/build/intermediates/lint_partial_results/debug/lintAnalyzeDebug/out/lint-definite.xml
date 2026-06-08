@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 9.2.1" type="incidents">
+
+    <incident
+        id="UseKtx"
+        severity="warning"
+        message="Use the KTX extension function `String.toUri` instead?">
+        <fix-replace
+            description="Replace with the toUri extension function"
+            family="Replace with the toUri extension function"
+            robot="true"
+            independent="true"
+            oldString="Uri.parse(&quot;package:${context.packageName}&quot;)"
+            replacement="&quot;package:${context.packageName}&quot;.toUri()"
+            reformat="value"
+            imports="androidx.core.net.toUri"
+            priority="0">
+            <range
+                file="${:feature:settings*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/settings/SettingsScreen.kt"
+                startOffset="7562"
+                endOffset="7605"/>
+        </fix-replace>
+        <location
+            file="${:feature:settings*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/settings/SettingsScreen.kt"
+            line="201"
+            column="16"
+            startOffset="7562"
+            endLine="201"
+            endColumn="59"
+            endOffset="7605"/>
+    </incident>
+
+    <incident
+        id="UseKtx"
+        severity="warning"
+        message="Use the KTX extension function `String.toUri` instead?">
+        <fix-replace
+            description="Replace with the toUri extension function"
+            family="Replace with the toUri extension function"
+            robot="true"
+            independent="true"
+            oldString="Uri.parse(&quot;package:${context.packageName}&quot;)"
+            replacement="&quot;package:${context.packageName}&quot;.toUri()"
+            reformat="value"
+            imports="androidx.core.net.toUri"
+            priority="0">
+            <range
+                file="${:feature:settings*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/settings/SettingsScreen.kt"
+                startOffset="7562"
+                endOffset="7605"/>
+        </fix-replace>
+        <location
+            file="${:feature:settings*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/settings/SettingsScreen.kt"
+            line="201"
+            column="16"
+            startOffset="7562"
+            endLine="201"
+            endColumn="59"
+            endOffset="7605"/>
+    </incident>
+
+</incidents>

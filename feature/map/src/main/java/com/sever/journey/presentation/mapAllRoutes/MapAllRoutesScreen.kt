@@ -111,8 +111,9 @@ fun MapAllRoutesScreen(
                             if (routePoints.isNotEmpty()) {
                                 val routeEntity = uiState.routes[routeId]
                                 val customIcon = getBitmapDescriptor(R.drawable.ic_circle_)
+                                val markerState = remember(routeId) { MarkerState(position = routePoints.first()) }
                                 Marker(
-                                    state = MarkerState(position = routePoints.first()),
+                                    state = markerState,
                                     title = routeEntity?.recordRouteName?.let { shortenString(it) } + " • ${routeEntity?.lenght}",
                                     snippet = "${
                                         routeEntity?.epochDays?.let { formatEpochDays(it) }

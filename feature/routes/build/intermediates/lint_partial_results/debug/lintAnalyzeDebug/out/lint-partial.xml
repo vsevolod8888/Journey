@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 9.2.1" type="partial_results">
+    <map id="UnusedResources">
+        <entry
+            name="model"
+            string="drawable[arrow_left(R),arrow_right(R),ic_delete_sweep(R),ic_brush(R),ic_calendar(R),ic_settings(R)],string[prevmonth(R),nextmonth(R),routes(R),therearenoroutesfortoday(R),therearenoroutesonthisdate(R),tittledeleteallert(R),areyousurewanttodeleteroute(R),delete(R),cancel(R),settings(R)];;;;"/>
+    </map>
+
+</incidents>

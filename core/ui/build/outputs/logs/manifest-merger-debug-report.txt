@@ -1,16 +1,36 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/vsevolod/Documents/WORK/Journey/core/ui/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest2727770927820609275.xml:2:13-83
-INJECTED from /Users/vsevolod/Documents/WORK/Journey/core/ui/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest2727770927820609275.xml:2:13-83
+ADDED from /Users/vsevolod/Documents/WORK/Journey/core/ui/src/main/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/vsevolod/Documents/WORK/Journey/core/ui/src/main/AndroidManifest.xml:2:1-8:12
 	package
-		INJECTED from /Users/vsevolod/Documents/WORK/Journey/core/ui/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest2727770927820609275.xml
+		INJECTED from /Users/vsevolod/Documents/WORK/Journey/core/ui/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/vsevolod/Documents/WORK/Journey/core/ui/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest2727770927820609275.xml:2:23-81
+		ADDED from /Users/vsevolod/Documents/WORK/Journey/core/ui/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/vsevolod/Documents/WORK/Journey/core/ui/src/main/AndroidManifest.xml:3:5-67
+	android:name
+		ADDED from /Users/vsevolod/Documents/WORK/Journey/core/ui/src/main/AndroidManifest.xml:3:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/vsevolod/Documents/WORK/Journey/core/ui/src/main/AndroidManifest.xml:4:5-79
+	android:name
+		ADDED from /Users/vsevolod/Documents/WORK/Journey/core/ui/src/main/AndroidManifest.xml:4:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/vsevolod/Documents/WORK/Journey/core/ui/src/main/AndroidManifest.xml:5:5-68
+	android:name
+		ADDED from /Users/vsevolod/Documents/WORK/Journey/core/ui/src/main/AndroidManifest.xml:5:22-65
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/vsevolod/Documents/WORK/Journey/core/ui/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /Users/vsevolod/Documents/WORK/Journey/core/ui/src/main/AndroidManifest.xml:6:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/vsevolod/Documents/WORK/Journey/core/ui/src/main/AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from /Users/vsevolod/Documents/WORK/Journey/core/ui/src/main/AndroidManifest.xml:7:22-78
 uses-sdk
-INJECTED from /Users/vsevolod/Documents/WORK/Journey/core/ui/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest2727770927820609275.xml reason: use-sdk injection requested
-INJECTED from /Users/vsevolod/Documents/WORK/Journey/core/ui/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest2727770927820609275.xml
-INJECTED from /Users/vsevolod/Documents/WORK/Journey/core/ui/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest2727770927820609275.xml
+INJECTED from /Users/vsevolod/Documents/WORK/Journey/core/ui/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/vsevolod/Documents/WORK/Journey/core/ui/src/main/AndroidManifest.xml
+INJECTED from /Users/vsevolod/Documents/WORK/Journey/core/ui/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/vsevolod/Documents/WORK/Journey/core/ui/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest2727770927820609275.xml
+		INJECTED from /Users/vsevolod/Documents/WORK/Journey/core/ui/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/vsevolod/Documents/WORK/Journey/core/ui/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest2727770927820609275.xml
+		INJECTED from /Users/vsevolod/Documents/WORK/Journey/core/ui/src/main/AndroidManifest.xml

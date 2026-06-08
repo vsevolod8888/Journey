@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 9.2.1" type="conditional_incidents">
+
+    <incident
+        id="InlinedApi"
+        severity="warning"
+        message="">
+        <fix-data minSdk="26-∞" requiresApi="33-∞"/>
+        <location
+            file="${:feature:map*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/mapNewRoute/MapNewRouteScreen.kt"
+            line="115"
+            column="56"
+            startOffset="4718"
+            endLine="115"
+            endColumn="81"
+            endOffset="4743"/>
+        <map>
+            <entry
+                name="message"
+                string="Field requires API level 33 (current min is %1$s): `android.content.Context#RECEIVER_EXPORTED`"/>
+            <api-levels id="minSdk"
+                value="26-∞"/>
+            <entry
+                name="name"
+                string="RECEIVER_EXPORTED"/>
+            <entry
+                name="owner"
+                string="android.content.Context"/>
+            <api-levels id="requiresApi"
+                value="33-∞"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; `SDK_INT` is always >= 26">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement=""
+            priority="0">
+            <range
+                file="${:feature:map*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/mapNewRoute/MapNewRouteScreen.kt"
+                startOffset="2287"
+                endOffset="2322"/>
+        </fix-replace>
+        <location
+            file="${:feature:map*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/mapNewRoute/MapNewRouteScreen.kt"
+            line="53"
+            column="1"
+            startOffset="2287"
+            endLine="53"
+            endColumn="36"
+            endOffset="2322"/>
+        <map>
+            <condition minGE="26-∞"/>
+        </map>
+    </incident>
+
+</incidents>

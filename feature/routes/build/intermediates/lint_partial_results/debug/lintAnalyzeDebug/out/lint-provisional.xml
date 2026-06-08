@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 9.2.1" type="conditional_incidents">
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; `SDK_INT` is always >= 26">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement=""
+            priority="0">
+            <range
+                file="${:feature:routes*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/calendar/MyCalendar.kt"
+                startOffset="1345"
+                endOffset="1380"/>
+        </fix-replace>
+        <location
+            file="${:feature:routes*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/calendar/MyCalendar.kt"
+            line="33"
+            column="1"
+            startOffset="1345"
+            endLine="33"
+            endColumn="36"
+            endOffset="1380"/>
+        <map>
+            <condition minGE="26-∞"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; `SDK_INT` is always >= 26">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement=""
+            priority="0">
+            <range
+                file="${:feature:routes*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/calendar/MyCalendar.kt"
+                startOffset="5561"
+                endOffset="5596"/>
+        </fix-replace>
+        <location
+            file="${:feature:routes*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/calendar/MyCalendar.kt"
+            line="129"
+            column="1"
+            startOffset="5561"
+            endLine="129"
+            endColumn="36"
+            endOffset="5596"/>
+        <map>
+            <condition minGE="26-∞"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; `SDK_INT` is always >= 26">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement=""
+            priority="0">
+            <range
+                file="${:feature:routes*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/calendar/MyWeekView.kt"
+                startOffset="6633"
+                endOffset="6668"/>
+        </fix-replace>
+        <location
+            file="${:feature:routes*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/calendar/MyWeekView.kt"
+            line="168"
+            column="1"
+            startOffset="6633"
+            endLine="168"
+            endColumn="36"
+            endOffset="6668"/>
+        <map>
+            <condition minGE="26-∞"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; `SDK_INT` is always >= 26">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement=""
+            priority="0">
+            <range
+                file="${:feature:routes*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/calendar/MyWeekView.kt"
+                startOffset="7034"
+                endOffset="7069"/>
+        </fix-replace>
+        <location
+            file="${:feature:routes*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/calendar/MyWeekView.kt"
+            line="183"
+            column="1"
+            startOffset="7034"
+            endLine="183"
+            endColumn="36"
+            endOffset="7069"/>
+        <map>
+            <condition minGE="26-∞"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; `SDK_INT` is always >= 26">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement=""
+            priority="0">
+            <range
+                file="${:feature:routes*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/calendar/MyWeekView.kt"
+                startOffset="8923"
+                endOffset="8958"/>
+        </fix-replace>
+        <location
+            file="${:feature:routes*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/calendar/MyWeekView.kt"
+            line="248"
+            column="1"
+            startOffset="8923"
+            endLine="248"
+            endColumn="36"
+            endOffset="8958"/>
+        <map>
+            <condition minGE="26-∞"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; `SDK_INT` is always >= 26">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement=""
+            priority="0">
+            <range
+                file="${:feature:routes*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/calendar/MyWeekView.kt"
+                startOffset="12012"
+                endOffset="12047"/>
+        </fix-replace>
+        <location
+            file="${:feature:routes*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/calendar/MyWeekView.kt"
+            line="335"
+            column="1"
+            startOffset="12012"
+            endLine="335"
+            endColumn="36"
+            endOffset="12047"/>
+        <map>
+            <condition minGE="26-∞"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; `SDK_INT` is always >= 35">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement=""
+            priority="0">
+            <range
+                file="${:feature:routes*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/calendar/MyWeekView.kt"
+                startOffset="17180"
+                endOffset="17231"/>
+        </fix-replace>
+        <location
+            file="${:feature:routes*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/calendar/MyWeekView.kt"
+            line="523"
+            column="1"
+            startOffset="17180"
+            endLine="523"
+            endColumn="52"
+            endOffset="17231"/>
+        <map>
+            <condition minGE="35-∞"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; `SDK_INT` is always >= 35">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement=""
+            priority="0">
+            <range
+                file="${:feature:routes*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/calendar/MyWeekView.kt"
+                startOffset="20857"
+                endOffset="20908"/>
+        </fix-replace>
+        <location
+            file="${:feature:routes*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/calendar/MyWeekView.kt"
+            line="616"
+            column="1"
+            startOffset="20857"
+            endLine="616"
+            endColumn="52"
+            endOffset="20908"/>
+        <map>
+            <condition minGE="35-∞"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; `SDK_INT` is always >= 26">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement=""
+            priority="0">
+            <range
+                file="${:feature:routes*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/routesbigcalendar/RoutesBigScreen.kt"
+                startOffset="2777"
+                endOffset="2812"/>
+        </fix-replace>
+        <location
+            file="${:feature:routes*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/routesbigcalendar/RoutesBigScreen.kt"
+            line="60"
+            column="1"
+            startOffset="2777"
+            endLine="60"
+            endColumn="36"
+            endOffset="2812"/>
+        <map>
+            <condition minGE="26-∞"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; `SDK_INT` is always >= 26">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement=""
+            priority="0">
+            <range
+                file="${:feature:routes*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/routessmallcalendar/RoutesScreen.kt"
+                startOffset="3014"
+                endOffset="3049"/>
+        </fix-replace>
+        <location
+            file="${:feature:routes*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/routessmallcalendar/RoutesScreen.kt"
+            line="66"
+            column="1"
+            startOffset="3014"
+            endLine="66"
+            endColumn="36"
+            endOffset="3049"/>
+        <map>
+            <condition minGE="26-∞"/>
+        </map>
+    </incident>
+
+</incidents>

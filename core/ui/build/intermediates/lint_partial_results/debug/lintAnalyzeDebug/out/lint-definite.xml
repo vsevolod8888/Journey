@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 9.2.1" type="incidents">
+
+    <incident
+        id="VectorRaster"
+        severity="warning"
+        message="Limit vector icons sizes to 200×200 to keep icon drawing fast; see https://developer.android.com/studio/write/vector-asset-studio#when for more">
+        <location
+            file="${:core:ui*debug*MAIN*sourceProvider*0*resDir*0}/drawable/ic_calendar.xml"
+            line="2"
+            column="20"
+            startOffset="87"
+            endLine="2"
+            endColumn="25"
+            endOffset="92"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/no_internet.png` in densityless folder">
+        <location
+            file="${:core:ui*debug*MAIN*sourceProvider*0*resDir*0}/drawable/no_internet.png"/>
+    </incident>
+
+    <incident
+        id="UseKtx"
+        severity="warning"
+        message="Use the KTX function `createBitmap` instead?">
+        <fix-replace
+            description="Replace with the createBitmap function"
+            family="Replace with the createBitmap function"
+            robot="true"
+            independent="true"
+            oldString="Bitmap.createBitmap(&#xA;        drawable.intrinsicWidth,&#xA;        drawable.intrinsicHeight,&#xA;        Bitmap.Config.ARGB_8888&#xA;    )"
+            replacement="createBitmap(drawable.intrinsicWidth, drawable.intrinsicHeight)"
+            reformat="value"
+            imports="androidx.core.graphics.createBitmap"
+            priority="0">
+            <range
+                file="${:core:ui*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/utils/Utils.kt"
+                startOffset="2134"
+                endOffset="2259"/>
+        </fix-replace>
+        <location
+            file="${:core:ui*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/utils/Utils.kt"
+            line="62"
+            column="18"
+            startOffset="2134"
+            endLine="66"
+            endColumn="6"
+            endOffset="2259"/>
+    </incident>
+
+</incidents>

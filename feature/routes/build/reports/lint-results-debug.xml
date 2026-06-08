@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 9.2.1">
+
+    <issue
+        id="ComposableNaming"
+        severity="Warning"
+        message="Composable functions that return Unit should start with an uppercase letter"
+        category="Correctness"
+        priority="3"
+        summary="Incorrect naming for @Composable functions"
+        explanation="@Composable functions without a return type should use similar naming to classes, starting with an uppercase letter and ending with a noun. @Composable functions with a return type should be treated as normal Kotlin functions, starting with a lowercase letter."
+        errorLine1="private fun weekDay("
+        errorLine2="            ~~~~~~~">
+        <location
+            file="/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/MyWeekView.kt"
+            line="144"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        severity="Warning"
+        message="Modifier parameter should be the first optional parameter"
+        category="Correctness"
+        priority="3"
+        summary="Guidelines for Modifier parameters in a Composable function"
+        explanation="The first (or only) Modifier parameter in a Composable function should follow the following rules:&#xA;- Be named `modifier`&#xA;- Have a type of `Modifier`&#xA;- Either have no default value, or have a default value of `Modifier`&#xA;- If optional, be the first optional parameter in the parameter list"
+        errorLine1="    modifier: Modifier = Modifier,"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/routessmallcalendar/CalendarDaySmall.kt"
+            line="27"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        severity="Warning"
+        message="Modifier parameter should be the first optional parameter"
+        category="Correctness"
+        priority="3"
+        summary="Guidelines for Modifier parameters in a Composable function"
+        explanation="The first (or only) Modifier parameter in a Composable function should follow the following rules:&#xA;- Be named `modifier`&#xA;- Have a type of `Modifier`&#xA;- Either have no default value, or have a default value of `Modifier`&#xA;- If optional, be the first optional parameter in the parameter list"
+        errorLine1="    modifier: Modifier = Modifier,"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/DayViewForBigCalendar.kt"
+            line="27"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        severity="Warning"
+        message="Modifier parameter should be the first optional parameter"
+        category="Correctness"
+        priority="3"
+        summary="Guidelines for Modifier parameters in a Composable function"
+        explanation="The first (or only) Modifier parameter in a Composable function should follow the following rules:&#xA;- Be named `modifier`&#xA;- Have a type of `Modifier`&#xA;- Either have no default value, or have a default value of `Modifier`&#xA;- If optional, be the first optional parameter in the parameter list"
+        errorLine1="    modifier: Modifier = Modifier,"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/MyCalendar.kt"
+            line="137"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        severity="Warning"
+        message="Modifier parameter should be the first optional parameter"
+        category="Correctness"
+        priority="3"
+        summary="Guidelines for Modifier parameters in a Composable function"
+        explanation="The first (or only) Modifier parameter in a Composable function should follow the following rules:&#xA;- Be named `modifier`&#xA;- Have a type of `Modifier`&#xA;- Either have no default value, or have a default value of `Modifier`&#xA;- If optional, be the first optional parameter in the parameter list"
+        errorLine1="    modifier: Modifier = Modifier,"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/MyWeekView.kt"
+            line="95"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        severity="Warning"
+        message="Modifier parameter should be the first optional parameter"
+        category="Correctness"
+        priority="3"
+        summary="Guidelines for Modifier parameters in a Composable function"
+        explanation="The first (or only) Modifier parameter in a Composable function should follow the following rules:&#xA;- Be named `modifier`&#xA;- Have a type of `Modifier`&#xA;- Either have no default value, or have a default value of `Modifier`&#xA;- If optional, be the first optional parameter in the parameter list"
+        errorLine1="    modifier: Modifier = Modifier,"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/MyWeekView.kt"
+            line="216"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        severity="Warning"
+        message="Modifier parameter should be the first optional parameter"
+        category="Correctness"
+        priority="3"
+        summary="Guidelines for Modifier parameters in a Composable function"
+        explanation="The first (or only) Modifier parameter in a Composable function should follow the following rules:&#xA;- Be named `modifier`&#xA;- Have a type of `Modifier`&#xA;- Either have no default value, or have a default value of `Modifier`&#xA;- If optional, be the first optional parameter in the parameter list"
+        errorLine1="    modifier: Modifier = Modifier,"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/MyWeekView.kt"
+            line="271"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UnnecessaryComposedModifier"
+        severity="Warning"
+        message="Unnecessary use of Modifier.composed"
+        category="Correctness"
+        priority="3"
+        summary="Modifier.composed should only be used for modifiers that invoke @Composable functions"
+        explanation="`Modifier.composed` allows invoking @Composable functions when creating a `Modifier` instance - for example, using `remember` to have instance-specific state, allowing the same `Modifier` object to be safely used in multiple places. Using `Modifier.composed` without calling any @Composable functions inside is unnecessary, and since the Modifier is no longer skippable, this can cause a lot of extra work inside the composed body, leading to worse performance."
+        errorLine1="fun Modifier.passTouchGesture(onTouchEvent: () -> Unit): Modifier = composed {"
+        errorLine2="                                                                    ~~~~~~~~">
+        <location
+            file="/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/MyWeekView.kt"
+            line="606"
+            column="69"/>
+    </issue>
+
+    <issue
+        id="UnnecessaryComposedModifier"
+        severity="Warning"
+        message="Unnecessary use of Modifier.composed"
+        category="Correctness"
+        priority="3"
+        summary="Modifier.composed should only be used for modifiers that invoke @Composable functions"
+        explanation="`Modifier.composed` allows invoking @Composable functions when creating a `Modifier` instance - for example, using `remember` to have instance-specific state, allowing the same `Modifier` object to be safely used in multiple places. Using `Modifier.composed` without calling any @Composable functions inside is unnecessary, and since the Modifier is no longer skippable, this can cause a lot of extra work inside the composed body, leading to worse performance."
+        errorLine1=") = composed {"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/MyWeekView.kt"
+            line="653"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="AutoboxingStateCreation"
+        severity="Hint"
+        message="Prefer `mutableLongStateOf` instead of `mutableStateOf`"
+        category="Performance"
+        priority="3"
+        summary="`State&lt;T>` will autobox values assigned to this state. Use a specialized state type instead."
+        explanation="Calling `mutableStateOf&lt;T>()` when `T` is either backed by a primitive type on the JVM or is a value class results in a state implementation that requires all state values to be boxed. This usually causes an additional allocation for each state write, and adds some additional work to auto-unbox values when reading the value of the state. Instead, prefer to use a specialized primitive state implementation for `Int`, `Long`, `Float`, and `Double` when the state does not need to track null values and does not override the default `SnapshotMutationPolicy`. See `mutableIntStateOf()`, `mutableLongStateOf()`, `mutableFloatStateOf()`, and `mutableDoubleStateOf()` for more information."
+        errorLine1="    var selectedDate by remember { mutableStateOf(dateToday.toEpochDays()) }"
+        errorLine2="                                   ~~~~~~~~~~~~~~">
+        <location
+            file="/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/MyCalendar.kt"
+            line="47"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="AutoboxingStateCreation"
+        severity="Hint"
+        message="Prefer `mutableIntStateOf` instead of `mutableStateOf`"
+        category="Performance"
+        priority="3"
+        summary="`State&lt;T>` will autobox values assigned to this state. Use a specialized state type instead."
+        explanation="Calling `mutableStateOf&lt;T>()` when `T` is either backed by a primitive type on the JVM or is a value class results in a state implementation that requires all state values to be boxed. This usually causes an additional allocation for each state write, and adds some additional work to auto-unbox values when reading the value of the state. Instead, prefer to use a specialized primitive state implementation for `Int`, `Long`, `Float`, and `Double` when the state does not need to track null values and does not override the default `SnapshotMutationPolicy`. See `mutableIntStateOf()`, `mutableLongStateOf()`, `mutableFloatStateOf()`, and `mutableDoubleStateOf()` for more information."
+        errorLine1="    var selectedYear by remember { mutableStateOf(dateToday.year) }"
+        errorLine2="                                   ~~~~~~~~~~~~~~">
+        <location
+            file="/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/MyCalendar.kt"
+            line="49"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="AutoboxingStateCreation"
+        severity="Hint"
+        message="Prefer `mutableIntStateOf` instead of `mutableStateOf`"
+        category="Performance"
+        priority="3"
+        summary="`State&lt;T>` will autobox values assigned to this state. Use a specialized state type instead."
+        explanation="Calling `mutableStateOf&lt;T>()` when `T` is either backed by a primitive type on the JVM or is a value class results in a state implementation that requires all state values to be boxed. This usually causes an additional allocation for each state write, and adds some additional work to auto-unbox values when reading the value of the state. Instead, prefer to use a specialized primitive state implementation for `Int`, `Long`, `Float`, and `Double` when the state does not need to track null values and does not override the default `SnapshotMutationPolicy`. See `mutableIntStateOf()`, `mutableLongStateOf()`, `mutableFloatStateOf()`, and `mutableDoubleStateOf()` for more information."
+        errorLine1="        mutableStateOf("
+        errorLine2="        ~~~~~~~~~~~~~~">
+        <location
+            file="/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/MyWeekView.kt"
+            line="275"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="AutoboxingStateCreation"
+        severity="Hint"
+        message="Prefer `mutableIntStateOf` instead of `mutableStateOf`"
+        category="Performance"
+        priority="3"
+        summary="`State&lt;T>` will autobox values assigned to this state. Use a specialized state type instead."
+        explanation="Calling `mutableStateOf&lt;T>()` when `T` is either backed by a primitive type on the JVM or is a value class results in a state implementation that requires all state values to be boxed. This usually causes an additional allocation for each state write, and adds some additional work to auto-unbox values when reading the value of the state. Instead, prefer to use a specialized primitive state implementation for `Int`, `Long`, `Float`, and `Double` when the state does not need to track null values and does not override the default `SnapshotMutationPolicy`. See `mutableIntStateOf()`, `mutableLongStateOf()`, `mutableFloatStateOf()`, and `mutableDoubleStateOf()` for more information."
+        errorLine1="    val previousMonthDays by remember { mutableStateOf(calculateVisibleDaysOfPreviousMonth(yearMonth)) }"
+        errorLine2="                                        ~~~~~~~~~~~~~~">
+        <location
+            file="/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/MyWeekView.kt"
+            line="282"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="AutoboxingStateCreation"
+        severity="Hint"
+        message="Prefer `mutableIntStateOf` instead of `mutableStateOf`"
+        category="Performance"
+        priority="3"
+        summary="`State&lt;T>` will autobox values assigned to this state. Use a specialized state type instead."
+        explanation="Calling `mutableStateOf&lt;T>()` when `T` is either backed by a primitive type on the JVM or is a value class results in a state implementation that requires all state values to be boxed. This usually causes an additional allocation for each state write, and adds some additional work to auto-unbox values when reading the value of the state. Instead, prefer to use a specialized primitive state implementation for `Int`, `Long`, `Float`, and `Double` when the state does not need to track null values and does not override the default `SnapshotMutationPolicy`. See `mutableIntStateOf()`, `mutableLongStateOf()`, `mutableFloatStateOf()`, and `mutableDoubleStateOf()` for more information."
+        errorLine1="        mutableStateOf("
+        errorLine2="        ~~~~~~~~~~~~~~">
+        <location
+            file="/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/MyWeekView.kt"
+            line="284"
+            column="9"/>
+    </issue>
+
+</issues>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 9.2.1" type="partial_results">
+    <map id="UnsafeIntentLaunch">
+            <map id="unprotected">
+                <entry
+                    name="android.content.BroadcastReceiver"
+                    boolean="true"/>
+            </map>
+    </map>
+    <map id="UnusedResources">
+        <entry
+            name="model"
+            string="drawable[ic_circle_(R)],string[clickwindowtodeleteroute(R),tittledeleteallert(R),areyousurewanttodeleteroute(R),delete(R),cancel(R),km(R),meters(R),save(R),conti(R)];;;;"/>
+    </map>
+
+</incidents>

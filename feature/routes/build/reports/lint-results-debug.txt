@@ -1,0 +1,97 @@
+/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/MyWeekView.kt:144: Warning: Composable functions that return Unit should start with an uppercase letter [ComposableNaming from androidx.compose.runtime]
+private fun weekDay(
+            ~~~~~~~
+
+   Explanation for issues of type "ComposableNaming":
+   @Composable functions without a return type should use similar naming to
+   classes, starting with an uppercase letter and ending with a noun.
+   @Composable functions with a return type should be treated as normal Kotlin
+   functions, starting with a lowercase letter.
+
+   Vendor: Jetpack Compose
+   Identifier: androidx.compose.runtime
+   Feedback: https://issuetracker.google.com/issues/new?component=612128
+
+/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/routessmallcalendar/CalendarDaySmall.kt:27: Warning: Modifier parameter should be the first optional parameter [ModifierParameter from androidx.compose.ui]
+    modifier: Modifier = Modifier,
+    ~~~~~~~~
+/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/DayViewForBigCalendar.kt:27: Warning: Modifier parameter should be the first optional parameter [ModifierParameter from androidx.compose.ui]
+    modifier: Modifier = Modifier,
+    ~~~~~~~~
+/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/MyCalendar.kt:137: Warning: Modifier parameter should be the first optional parameter [ModifierParameter from androidx.compose.ui]
+    modifier: Modifier = Modifier,
+    ~~~~~~~~
+/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/MyWeekView.kt:95: Warning: Modifier parameter should be the first optional parameter [ModifierParameter from androidx.compose.ui]
+    modifier: Modifier = Modifier,
+    ~~~~~~~~
+/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/MyWeekView.kt:216: Warning: Modifier parameter should be the first optional parameter [ModifierParameter from androidx.compose.ui]
+    modifier: Modifier = Modifier,
+    ~~~~~~~~
+/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/MyWeekView.kt:271: Warning: Modifier parameter should be the first optional parameter [ModifierParameter from androidx.compose.ui]
+    modifier: Modifier = Modifier,
+    ~~~~~~~~
+
+   Explanation for issues of type "ModifierParameter":
+   The first (or only) Modifier parameter in a Composable function should
+   follow the following rules:
+   - Be named modifier
+   - Have a type of Modifier
+   - Either have no default value, or have a default value of Modifier
+   - If optional, be the first optional parameter in the parameter list
+
+   Vendor: Jetpack Compose
+   Identifier: androidx.compose.ui
+   Feedback: https://issuetracker.google.com/issues/new?component=612128
+
+/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/MyWeekView.kt:606: Warning: Unnecessary use of Modifier.composed [UnnecessaryComposedModifier from androidx.compose.ui]
+fun Modifier.passTouchGesture(onTouchEvent: () -> Unit): Modifier = composed {
+                                                                    ~~~~~~~~
+/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/MyWeekView.kt:653: Warning: Unnecessary use of Modifier.composed [UnnecessaryComposedModifier from androidx.compose.ui]
+) = composed {
+    ~~~~~~~~
+
+   Explanation for issues of type "UnnecessaryComposedModifier":
+   Modifier.composed allows invoking @Composable functions when creating a
+   Modifier instance - for example, using remember to have instance-specific
+   state, allowing the same Modifier object to be safely used in multiple
+   places. Using Modifier.composed without calling any @Composable functions
+   inside is unnecessary, and since the Modifier is no longer skippable, this
+   can cause a lot of extra work inside the composed body, leading to worse
+   performance.
+
+   Vendor: Jetpack Compose
+   Identifier: androidx.compose.ui
+   Feedback: https://issuetracker.google.com/issues/new?component=612128
+
+/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/MyCalendar.kt:47: Hint: Prefer mutableLongStateOf instead of mutableStateOf [AutoboxingStateCreation from androidx.compose.runtime]
+    var selectedDate by remember { mutableStateOf(dateToday.toEpochDays()) }
+                                   ~~~~~~~~~~~~~~
+/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/MyCalendar.kt:49: Hint: Prefer mutableIntStateOf instead of mutableStateOf [AutoboxingStateCreation from androidx.compose.runtime]
+    var selectedYear by remember { mutableStateOf(dateToday.year) }
+                                   ~~~~~~~~~~~~~~
+/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/MyWeekView.kt:275: Hint: Prefer mutableIntStateOf instead of mutableStateOf [AutoboxingStateCreation from androidx.compose.runtime]
+        mutableStateOf(
+        ~~~~~~~~~~~~~~
+/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/MyWeekView.kt:282: Hint: Prefer mutableIntStateOf instead of mutableStateOf [AutoboxingStateCreation from androidx.compose.runtime]
+    val previousMonthDays by remember { mutableStateOf(calculateVisibleDaysOfPreviousMonth(yearMonth)) }
+                                        ~~~~~~~~~~~~~~
+/Users/vsevolod/Documents/WORK/Journey/feature/routes/src/main/java/com/sever/journey/presentation/calendar/MyWeekView.kt:284: Hint: Prefer mutableIntStateOf instead of mutableStateOf [AutoboxingStateCreation from androidx.compose.runtime]
+        mutableStateOf(
+        ~~~~~~~~~~~~~~
+
+   Explanation for issues of type "AutoboxingStateCreation":
+   Calling mutableStateOf<T>() when T is either backed by a primitive type on
+   the JVM or is a value class results in a state implementation that requires
+   all state values to be boxed. This usually causes an additional allocation
+   for each state write, and adds some additional work to auto-unbox values
+   when reading the value of the state. Instead, prefer to use a specialized
+   primitive state implementation for Int, Long, Float, and Double when the
+   state does not need to track null values and does not override the default
+   SnapshotMutationPolicy. See mutableIntStateOf(), mutableLongStateOf(),
+   mutableFloatStateOf(), and mutableDoubleStateOf() for more information.
+
+   Vendor: Jetpack Compose
+   Identifier: androidx.compose.runtime
+   Feedback: https://issuetracker.google.com/issues/new?component=612128
+
+0 errors, 9 warnings, 5 hints

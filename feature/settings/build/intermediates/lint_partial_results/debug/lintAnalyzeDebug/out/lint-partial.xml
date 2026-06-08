@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 9.2.1" type="partial_results">
+    <map id="UnsafeImplicitIntentLaunch">
+            <map id="actionsSent">
+                    <map id="android.settings.APPLICATION_DETAILS_SETTINGS (used to start an activity)">
+                        <location id="0"
+                            file="${:feature:settings*debug*MAIN*sourceProvider*0*javaDir*0}/com/sever/journey/presentation/settings/SettingsScreen.kt"
+                            line="199"
+                            column="18"
+                            startOffset="7438"
+                            endLine="199"
+                            endColumn="70"
+                            endOffset="7490"/>
+                    </map>
+            </map>
+    </map>
+    <map id="UnusedResources">
+        <entry
+            name="model"
+            string="string[settings(R),themelightdark(R),deleteallroutes(R),notifications(R),showallroutes(R),tittledeletalldialog(R),areyousurewanttodeleteallroutes(R),delete(R),cancel(R)];;;;"/>
+    </map>
+
+</incidents>
